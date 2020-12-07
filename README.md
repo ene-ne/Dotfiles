@@ -1,4 +1,4 @@
-First of all I would like to thank everyone from whom I inspired (read stole) various parts of this rice(?).Addy's blogs helped me a lot and made me understand a lot more,so big thank you to him without whom most of it wouldnt have happened. I highly recommend checking it out.
+First of all I would like to thank everyone from whom I 'drew inspiration for' (read stole) various parts of this rice(?).Addy's blogs helped me a lot and made me understand a lot more,so big thank you to him without whom most of it wouldnt have happened. I highly recommend checking it out.
 
 GTK-THEME : Phocus/ Oomox Generated
 ICON-THEME : Oomox Generated

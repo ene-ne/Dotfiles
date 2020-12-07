@@ -1,0 +1,25 @@
+//META{"name":"Dusk to Dawn","description":"Simple theme that changes discord's default appearance in subtle ways.","author":"Asteria","version":"1.5","website":"https://discord.gg/QRxZPvc"}*//{}
+@import url('https://asteria5675.github.io/BetterDiscordThemes/SourceCodes/src/dd.css');
+
+/* Variables */
+:root {
+    --button-radius: 0px; /* Discord Default - 3px | Theme's Default - 0px */
+    --channel-radius: 6px; /* Discord Default - 3px | Theme's Default - 6px */
+    /* Dark Mode */
+    --dm-channel-color: hsla(240, 1%, 29%, 0.5); /* Channel Selected/Hoverd background color | Theme's Default - hsla(240, 1%, 29%, 0.5) */
+    --dm-chat-bg: #1a1a1a; /* Chat's background color | Theme's Default - #1a1a1a */
+    /* Light Mode */
+    --lm-channel-color: rgba(14, 13, 13, 0.8); /* Channel Selected/Hoverd background color | Theme's Default - hsla(240, 1%, 29%, 0.5) */
+    --lm-chat-bg: #f7f7ff; /* Chat's background color | Theme's Default - #f7f7ff */
+}
+
+/* Highlight Selection */
+/* -delete this css below if you do not want a different highlight than default blue and white text*/
+.theme-dark ::selection {
+    background-color: #f0e8e8;
+    color: #1e1e1e;
+}
+.theme-light ::selection {
+    background-color: #201f1f;
+    color: #efebeb;
+}

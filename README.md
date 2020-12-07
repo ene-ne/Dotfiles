@@ -4,6 +4,7 @@ GTK-THEME : Phocus
 ICON-THEME : Oomox Generated
 CURSOR-THEME : La Capitaine
 
-![Artix](/Screenshots/Artix.png?raw=true "Artix") 
+
 ![Artix](/Screenshots/Light.png?raw=true "Light")
+![Artix](/Screenshots/Artix.png?raw=true "Artix") 
 p.s: sorry for it being a disorganized wreck, after quite a long time I have gotten back to it. will work on making it more presentable.

@@ -3,10 +3,10 @@ First of all I would like to thank everyone from whom I 'drew inspiration for' (
 GTK-THEME : Oomox Generated</br>
 ICON-THEME : Oomox Generated</br>
 CURSOR-THEME : La Capitaine</br>
-Polywins.sh : https://github.com/alnj/polywins
-##Openbox
+Polywins.sh : https://github.com/alnj/polywins</br>
+##Openbox</br>
 ![Void](/Screenshots/openbox.png?raw=true "Openbox")
-##BSPWM
+##BSPWM</br>
 **Light**
 ![Artix](/Screenshots/Light.png?raw=true "Light")</br>
 **Dark**

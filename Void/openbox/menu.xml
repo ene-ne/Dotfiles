@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu >
+<menu id="root-menu"
+	label="MENU">
+<separator label ="APPLICATIONS">
+</separator>
+<item label="Browser"
+	icon="/home/ryan/.icons/chrome.png">
+<action name ="Execute">
+	<command>chromium</command>
+</action>
+</item>
+<item label="Discord"
+	icon="/home/ryan/.icons/discord.png">
+<action name = "Execute">
+	<command>Discord</command>
+</action>
+</item>
+<separator label ="MEDIA">
+</separator>
+<item label ="Spotify" icon ="/home/ryan/.icons/spotify.png">
+<action name ="Execute">
+	<command>spotify</command>
+</action>
+</item>
+<item label ="VLC" icon="/home/ryan/.icons/video.png">
+	<action name ="Execute">
+		<command>vlc</command>
+	</action>
+</item>
+<separator label = "TOOLS">
+</separator>
+	<item label = "Text Editor" icon="/home/ryan/.icons/vim.png">
+		<action name ="Execute">
+			<command>alacritty -e vim</command>
+		</action>
+	</item>
+	<item label ="File Manager" icon = "/home/ryan/.icons/folder.png">
+		<action name = "Execute">
+			<command>thunar</command>
+		</action>
+	</item>
+	<item name = "Terminal" icon ="/home/ryan/.icons/terminal.png">
+		<action name = "Execute">
+			<command>alacritty</command>
+		</action>
+	</item>
+	<item name = "Zathura" icon ="/home/ryan/.icons/pdf.png">
+		<action name = "Execute">
+			<command>zathura</command>
+		</action>
+	</item>
+	<item label = "Gimp" icon ="/home/ryan/.icons/gimp.png">
+		<action name="Execute">
+			<command>gimp</command>
+		</action>
+	</item>
+	<item label = "System Monitor" icon = "/home/ryan/.icons/computer.png">
+		<action name ="Execute">
+			<command>alacritty -e htop</command>
+		</action>
+	</item>
+	<item label = "Transmission" icon = "/home/ryan/.icons/transmission.png">
+		<action name="Execute">
+			<command>transmission-gtk</command>
+		</action>
+	</item>
+	<item label ="Audio" icon = "/home/ryan/.icons/audio.png">
+		<action name ="Execute">
+			<command>pavucontrol</command>
+		</action>
+	</item>
+	<separator label ="ALL APPS">
+	</separator>
+	
+		<item label =">_" icon = "/home/ryan/.icons/apps.png">
+			<action name ="Execute">
+				<command>/home/ryan/.config/rofi/launchers/colorful/launcher.sh</command>
+			</action>
+		</item>
+
+		<separator label ="POWER">
+		</separator>
+		<item label ="powermenu" icon ="/home/ryan/.icons/power.png">
+			<action name="Execute">
+				<command>/home/ryan/.config/rofi/applets/android/powermenu.sh</command>
+			</action>
+		</item>
+</menu>
+	
+
+</openbox_menu>

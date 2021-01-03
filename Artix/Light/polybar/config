@@ -1,7 +1,7 @@
 [colors]
-background = #fffcfd
-foreground = #250E07
-background-alt = #ffdeb9
+background = #ffffff
+foreground = #000000
+background-alt = #ffba69
 foreground-alt = #89e8b5 
 cpu = #E7A09E
 ram = #92AED7
@@ -9,21 +9,19 @@ time = #F2D06D
 
 [bar/bar]
 override-redirect = true
-radius = 5
+radius = 3
 offset-x = 7
 offset-y = 7
 width = 99%
-height = 25 
+height = 20 
 fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 line-size = 2
 line-color = #f00
-font-0 = Iosevka:size=12;2
-font-1 = M+ 1mn:style=bold:pixelsize=13;2
-font-2 = Material Icons:size=15;2
-font-3 = "Ubuntu Condensed:style=bold:size=13;2"
-font-4 = "icomoon\-feather:size=10;2"
+font-0 = IPAGothic:size=10;3
+font-1 = Iosevka:style=Book:size=11;4
+font-2= "feather:size=10;2"
 padding = 1
 modules-left = cpu sep memory sep temperature sep backlight
 modules-center = polywins
@@ -52,7 +50,7 @@ wm-restack = bspwm
   label-focused-padding = 2
   label-occupied = %name%
   label-occupied-padding = 2
-  label-occupied-foreground = #e6d6ac
+  label-occupied-foreground = #cc9393
   label-empty = %name%
   label-empty-padding = 2
 
@@ -100,8 +98,8 @@ interval = 0.5
 ;   <ramp-coreload>
 ;;format = <label> <ramp-coreload>
 format = <label>
-format-prefix = 
-format-prefix-foreground = #9c571f
+format-prefix = 
+format-prefix-foreground = #000000
 ; Available tokens:
 ;   %percentage% (default) - total cpu load averaged over all cores
 ;   %percentage-sum% - Cumulative load on all cores
@@ -109,7 +107,6 @@ format-prefix-foreground = #9c571f
 ;   %percentage-core[1-9]% - load percentage for specific core
 label = " %percentage%%"
 label-foreground = #000000
-format-underline = #eb7434
 [module/memory]
 type = internal/memory
 ; Seconds to sleep between updates
@@ -127,8 +124,8 @@ interval = 3
 ;   <ramp-swap-used>
 ;   <ramp-swap-free>
 format = <label>
-format-prefix = 
-format-prefix-foreground = #9c571f
+format-prefix = 
+format-prefix-foreground = #000000
 ; Available tokens:
 ;   %percentage_used% (default)
 ;   %percentage_free%
@@ -149,7 +146,6 @@ format-prefix-foreground = #9c571f
 
 label = " %mb_used%"
 label-foreground = #000000
-format-underline = #eb7434
 
 [module/backlight]
 type = internal/xbacklight
@@ -158,25 +154,18 @@ type = internal/xbacklight
 ; $ ls -1 /sys/class/backlight/
 card = intel_backlight
 
-; Available tags:
-;   <label> (default)
-;   <ramp>
-;   <bar>
 format = <ramp> <label>
 
-; Available tokens:
-;   %percentage% (default)
 label = %percentage%%
-label-foreground = #000000
 
 ; Only applies if <ramp> is used
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-format-underline = #eb7434
+
  
 
 [module/temperature]
@@ -233,14 +222,13 @@ label-warn-foreground = #f00
 ; Requires the <ramp> tag
 ; The icon selection will range from 0 to `warn-temperature`
 ; with the current temperature as index.
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
 
-ramp-foreground = #9c571f
-format-underline = #eb7434
+ramp-foreground = #000000
 
 [module/mpd]
 type = internal/mpd
@@ -253,7 +241,6 @@ icon-pause = 
 label-song-maxlen = 20
 label-song-ellipsis = false
 label-foreground = #000000
-format-underline = #eb7434
 
 
 [module/date]
@@ -261,9 +248,7 @@ type = internal/date
 date-alt = "%Y-%m-%d %a"
 time = "%I:%M %p "
 time-alt = %H:%M
-/*format-underline = ${colors.time}*/
 label = "%date% %time% "
-format-underline = #eb7434
 
 [module/battery]
 type = internal/battery
@@ -272,10 +257,8 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
@@ -302,7 +285,6 @@ animation-charging-framerate = 750
 [module/pulseaudio]
 type = custom/script
 tail = true
-format-underline = ${colors.background}
 label-padding = 1
 label-foreground = ${colors.foreground}
 
@@ -310,7 +292,7 @@ label-foreground = ${colors.foreground}
 # You can copy-paste your options for each possible action, which is more
 # trouble-free but repetitive, or apply only the relevant ones (for example
 # --sink-blacklist is only needed for next-sink).
-exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:    Speakers" --sink-nickname "alsa_output.usb-GuangZhou_FiiO_Electronics_Technology_Co.__Ltd._FiiO_M3K_FiiO_M3K-00.iec958-stereo:    Headphones" listen
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:    PCM" --sink-nickname "alsa_output.usb-GuangZhou_FiiO_Electronics_Technology_Co.__Ltd._FiiO_M3K_FiiO_M3K-00.iec958-stereo:    DAC" listen
 click-right = exec pavucontrol &
 click-left = pulseaudio-control togmute
 click-middle = pulseaudio-control --sink-blacklist ["alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2","echoCancel_sink"] next-sink
@@ -323,22 +305,22 @@ scroll-down = pulseaudio-control --volume-max 100 down
 
   wm-restack = bspwm
   bottom = true
-  background = ${colors.background}
+  background = ${colors.background} 
   foreground = ${colors.foreground}
   fixed-center = true
   width = 75%
-  height = 25
-  radius = 5
+  height = 20
+  radius = 3 
   line-size = 0
   line-color = #f00
   offset-y =7 
   offset-x = 175 
+  font-0 = IPAGothic:size=10;2
+  font-1 = azukifontB:size=10;2
+  font-2 = Iosevka:style=bold:size=10;2
+  font-3 = Material Icons:size=15;2
 
-  font-0 = Iosevka:style=bold:size=12;2
-  font-1 = M+ 1mn:style=bold:pixelsize=13;2
-  font-2 = Material Icons:size=15;2
-  font-3 = Noto Sans JP:size=12;2
- modules-left = sep sep sep sep sep mpd 
+ modules-left = sep sep sep sep sep sep mpd 
  modules-center = bspwm 
  modules-right = pulseaudio
  tray-position = center

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf6ed;
+  font-family: 'Iosevka', sans-serif;
+}
+
+.card-container {
+  background-color: #3b3a39;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+}
+
+.container {
+  margin: 20px;
+  height: 142px;
+}
+
+.links div {
+
+  margin-bottom: 5px;
+  color: #d1eddf;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.links a{
+  display: flex;
+  flex-direction: column;
+  color: #ede6d1;
+}
+
+.links a:hover {
+  color: #2987bd;
+}
+
+
+img {
+  height: 300px;
+}

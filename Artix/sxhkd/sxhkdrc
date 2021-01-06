@@ -45,10 +45,16 @@ XF86AudioMute
 #
 # bspwm hotkeys
 #
+# Remove current tab from tabbed
+super + shift + r
+        tabc.sh $(bspc query -N -n focused) remove
 
+# At given direction: join two windows into a new tabbed or add window to an existing tabbed
+super + shift + {Left,Down,Up,Right}
+        tabc.sh $(bspc query -N -n {west,south,north,east}) add $(bspc query -N -n focused)
 # quit/restart bspwm
 super + alt + {q,r}
-	bspc {quit,wm -r} 
+	pkill redshift-gtk && pkill redshift & bspc {quit,wm -r} 
 
 # close and kill
 super + {_,shift + }q
@@ -87,7 +93,7 @@ super + r
 #
 
 # set the window state
-super + {t,shift + t,s,f}
+super + {t,alt + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
@@ -115,7 +121,7 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
+super + {grave}
 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
@@ -148,6 +154,11 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
+
+#change orientation
+super + shift + Tab
+	bspc node @/ -R 90
+
 #
 # move/resize
 #
@@ -176,3 +187,6 @@ super + e
 	rofi -show power-menu -modi power-menu:rofi-power-menu
 super + alt + shift + r
 	pkill picom && picom -b
+super + ctrl + m
+	exec --no-startup-id /bin/mute-notif.sh
+

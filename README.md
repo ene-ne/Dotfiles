@@ -6,7 +6,7 @@ CURSOR-THEME : La Capitaine</br>
 Polywins.sh : https://github.com/alnj/polywins</br>
 ## BSPWM</br>
 **Light**
-![Artix](/Screenshots/Light.png?raw=true "Light")</br>
+![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")</br>
 ## Openbox</br>
 ![Void](/Screenshots/openbox.png?raw=true "Openbox")
 p.s: sorry for it being a disorganized wreck, after quite a long time I have gotten back to it. will work on making it more presentable.

@@ -7,7 +7,7 @@ super + Return
 	alacritty
 # program launcher
 super + d
-	rofi -show drun
+	rofi -show drun -theme .config/rofi/drun.rasi
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -17,10 +17,10 @@ super + space
 	plank-toggle.sh
 
 super + w
-	chromium
+	chrome-start.sh
 	
-super + h
-	thunar
+super + e
+	jumpapp	thunar
 	
 	
 XF86AudioPlay	
@@ -40,7 +40,9 @@ XF86AudioLowerVolume
 
 XF86AudioMute
 	amixer -D pulse set Master toggler	
-    
+   
+super + Tab 
+	bsp-layout cycle 
 	
 #
 # bspwm hotkeys
@@ -183,10 +185,10 @@ shift + Print
 #Ytop
 super + shift + a
 	alacritty -e ytop
-super + e
-	rofi -show power-menu -modi power-menu:rofi-power-menu
+super + End
+	powermenu.sh
 super + alt + shift + r
-	pkill picom && picom -b
+	pkill picom && picom --experimental-backends -b
 super + ctrl + m
 	exec --no-startup-id /bin/mute-notif.sh
 

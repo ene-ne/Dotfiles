@@ -4,11 +4,9 @@ GTK-THEME : Oomox Generated</br>
 ICON-THEME : Oomox Generated</br>
 CURSOR-THEME : La Capitaine</br>
 Polywins.sh : https://github.com/alnj/polywins</br>
-## Openbox</br>
-![Void](/Screenshots/openbox.png?raw=true "Openbox")
 ## BSPWM</br>
 **Light**
 ![Artix](/Screenshots/Light.png?raw=true "Light")</br>
-**Dark**
-![Artix](/Screenshots/Artix.png?raw=true "Artix") 
+## Openbox</br>
+![Void](/Screenshots/openbox.png?raw=true "Openbox")
 p.s: sorry for it being a disorganized wreck, after quite a long time I have gotten back to it. will work on making it more presentable.

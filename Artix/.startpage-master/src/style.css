@@ -5,18 +5,19 @@
 }
 
 body {
-  background-color: #faf6ed;
-  font-family: 'Iosevka', sans-serif;
+  background-color: #FAFAFA;
+  font-family: 'KollarSans-Semibold'; 
+  font-size: 18px;
 }
 
 .card-container {
-  background-color: #3b3a39;
+  background-color:#FFEFE3;
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 300px;
+  height: 250px;
 }
 
 .container {
@@ -27,22 +28,22 @@ body {
 .links div {
 
   margin-bottom: 5px;
-  color: #d1eddf;
-  font-size: 1.2rem;
+  color: #a6b4b3;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .links a{
   display: flex;
   flex-direction: column;
-  color: #ede6d1;
+  color: #000000;
 }
 
 .links a:hover {
-  color: #2987bd;
+  color: #a6b4b3;
 }
 
 
 img {
-  height: 300px;
+  height: 250px;
 }

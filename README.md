@@ -1,9 +1,6 @@
  Thanks to [alnj](https://github.com/alnj)
 
-GTK-THEME : Adapta Nokto </br>
-ICON-THEME : Papirus</br>
-CURSOR-THEME : La Capitaine</br>
-Polywins.sh : https://github.com/alnj/polywins</br>
+
 ## BSPWM</br>
 **Dark**
 ![Debian](/Debian/Screenshots/1622234974.png?raw=true "BSPWM")

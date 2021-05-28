@@ -1,0 +1,109 @@
+<eww>
+    <definitions>
+        <!--
+            THIS WAS MADE AFTER THE WIDGETS.
+            FOLLOWING THE ONE ON THE DOCUMENTATION WILL BREAK THE WHOLE CONFIG.
+          -->
+        <def name="eww-window">
+            <box/>
+        </def>
+        <def name="date">
+            <box orientation="v" space-evenly="false">
+                <box orientation="h" class="time">
+                    <box class="hour">{{hour}}</box>
+                    <box class="semicolon">:</box>
+                    <box class="minute">{{minute}}</box>
+                </box>
+                <box class="day">{{day}}</box>
+            </box>
+        </def>
+        <def name="player">
+            <box orientation="h" space-evenly="true">
+                <box class="song-art" style="background-image: url('{{art}}');">{{song_art}}</box>
+                <box class="song-data" orientation="v" space-evenly="false">
+                    <box class="song-title">{{song_title}}</box>
+                    <box class="player-btn" orientation="h" halign="center">
+                        <button onclick="playerctl previous"></button> 
+                        <button class="pause-play" onclick="playerctl play-pause">{{player_status}}</button>
+                        <button onclick="playerctl next"></button>
+                    </box>
+                </box>
+            </box>
+        </def>
+        <def name="system-manager">
+            <box orientation="v" space-evenly="false">
+                <box class="ram-bar" orientation="h">
+                    <box class="label-ram-bar">RAM</box>
+                    <scale min="0" max="101" active="false" value="{{used_ram}}"></scale>
+                </box>
+                <box class="brightness-bar" orientation="h">
+                    <box class="label-brightness-bar">BRI</box>
+                    <scale min="0" max="101" active="false" value="{{brightness}}"></scale>
+                </box>
+                <box class="vol-bar" orientation="h">
+                    <box class="label-vol-bar">VOL</box>
+                    <scale min="0" max="101" active="false" value="{{volume}}"></scale>
+	    </box>
+	    <box class="battery" orientation="h">
+		    <box class="label-battery">BAT</box>
+		    <scale min="0" max="101"
+			    active="false"
+			    value="{{battery}}"></scale>
+	    </box>
+                <box class="powermenu" orientation="h">
+                    <box class="powermenu-btn" halign="center" space-evenly="false">
+                        <button class="lock-btn" onclick=" loginctl lock-session"></button>
+                        <button class="logout-btn" onclick="bspc quit"></button>
+                        <button class="shutdown-btn" onclick="shutdown.sh"></button> 
+                    </box>
+                </box>
+            </box>
+        </def>
+    </definitions>
+
+    <variables>
+        <!-- DATE VARS -->
+        <script-var name="minute" interval="10s">date "+%M"</script-var>
+        <script-var name="hour" interval="5m">date "+%H"</script-var>
+        <script-var name="day" interval="12h">~/.config/eww/scripts/getDay</script-var>
+
+        <!-- PLAYER VARS -->
+        <script-var name="art" interval="5s">~/.config/eww/scripts/echoSongArt</script-var>
+        <script-var name="song_art" interval="5s">~/.config/eww/scripts/getSongArt</script-var>
+        <script-var name="song_title" interval="2s">~/.config/eww/scripts/getSongTitle</script-var>
+        <script-var name="player_status" interval="2s">~/.config/eww/scripts/getPlayerStatus</script-var>
+
+        <!-- SYSTEM INFO VAR -->
+        <script-var name="used_ram" interval="2s">~/.config/eww/scripts/getUsedRam</script-var>
+        <script-var name="volume" interval="1s">~/.config/eww/scripts/getVolume</script-var>
+	<script-var name="brightness" interval="1s">~/.config/eww/scripts/getBrightness</script-var>
+	<script-var name="battery" interval="30s">~/.config/eww/scripts/getBattery</script-var>
+    </variables>
+
+    <windows>
+        <window name="eww-window">
+            <geometry x="1440px" y="100px" width="480px" height="900px"/>
+            <widget>
+                <eww-window/>
+            </widget>
+        </window>
+        <window name="date">
+            <geometry x="1490px" y="250px" width="400px" height="100px"/>
+            <widget>
+                <date/>
+            </widget>
+        </window>
+        <window name="player">
+            <geometry x="1490px" y="400px" width="400px" height="150px"/>
+            <widget>
+                <player/>
+            </widget>
+        </window>
+        <window name="system-manager">
+            <geometry x="1490px" y="570px" width="400px" height="160px"/>
+            <widget>
+                <system-manager/>
+            </widget>
+        </window>
+    </windows>
+</eww>

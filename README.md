@@ -1,10 +1,12 @@
-First of all I would like to thank everyone from whom I 'drew inspiration for' (read stole) various parts of this rice(?).Addy's blogs helped me a lot and made me understand a lot more,so big thank you to him without whom most of it wouldnt have happened. I highly recommend checking it out.
+<p align=center> Thanks to ![Alnj](https://github.com/alnj)
 
-GTK-THEME : Oomox Generated</br>
-ICON-THEME : Oomox Generated</br>
+GTK-THEME : Adapta Nokto </br>
+ICON-THEME : Papirus</br>
 CURSOR-THEME : La Capitaine</br>
 Polywins.sh : https://github.com/alnj/polywins</br>
 ## BSPWM</br>
+**Dark**
+![Debian](/Debian/Screenshots/1622234974.png?raw=true "BSPWM")
 **Light**
 ![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")</br>
 ## Openbox</br>

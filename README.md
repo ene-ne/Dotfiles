@@ -1,4 +1,4 @@
-<p align=center> Thanks to [alnj](https://github.com/alnj)
+<p align=center> Thanks to [alnj](https://github.com/alnj)</p>
 
 GTK-THEME : Adapta Nokto </br>
 ICON-THEME : Papirus</br>

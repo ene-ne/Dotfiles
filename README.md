@@ -1,11 +1,41 @@
- Thanks to [alnj](https://github.com/alnj)
 
+<h1 align="center"><img src=/Screenshots/seaweed-dotfiles-readme-logo.png alt="Welcome to my dotfiles" height=250px width=350px /></h1>
+<p align="center">🌺 Special thanks to <a href="https://github.com/alnj">alnj</a>. 🌺</p>
+<br>
 
-## BSPWM</br>
-**Dark**
+## Screenshots 🌺
+
+### BSPWM
+
+#### Dark
+
 ![Debian](/Debian/Screenshots/1622234974.png?raw=true "BSPWM")
-**Light**
+
+#### Light
+
 ![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")</br>
-## Openbox</br>
+
+### Openbox
+
+#### Light
+
 ![Void](/Screenshots/openbox.png?raw=true "Openbox")
-p.s: sorry for it being a disorganized wreck, after quite a long time I have gotten back to it. will work on making it more presentable.
+
+## Things used 🌺
+
+* GTK-THEME : Oomox Generated
+* ICON-THEME : Oomox Generated
+* CURSOR-THEME : La Capitaine
+* Polywins.sh : https://github.com/alnj/polywins
+
+## Things in these dotfiles 🌺
+
+* Discord
+* Picom
+* Dunst
+* Eww
+* Custom Startpage
+* Polybar
+* Rofi
+* Vim
+* and many other!

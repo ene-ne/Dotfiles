@@ -40,4 +40,4 @@
 * Vim
 * and many other!
 
-<p align center> Thanks to <a href="https://github.com/Gitleptune">Gitleptune for making the readme presentable</a></p>
+<p align center> Thanks to <a href="https://github.com/Gitleptune">Gitleptune</a> for making the readme presentable</p>

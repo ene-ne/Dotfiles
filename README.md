@@ -23,8 +23,8 @@
 
 ## Things used 🌺
 
-* GTK-THEME : Oomox Generated
-* ICON-THEME : Oomox Generated
+* GTK-THEME : Adapta Nokto
+* ICON-THEME : Papirus
 * CURSOR-THEME : La Capitaine
 * Polywins.sh : https://github.com/alnj/polywins
 
@@ -39,3 +39,5 @@
 * Rofi
 * Vim
 * and many other!
+
+<p align center> Thanks to <a href="https://github.com/Gitleptune">Gitleptune for making the readme presentable</a></p>

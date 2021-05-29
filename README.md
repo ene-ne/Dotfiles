@@ -3,7 +3,7 @@
 <p align="center">🌺 Special thanks to <a href="https://github.com/alnj">alnj</a>. 🌺</p>
 <br>
 
-## Screenshots
+## Screenshots 🌺
 
 ### BSPWM
 
@@ -21,14 +21,14 @@
 
 ![Void](/Screenshots/openbox.png?raw=true "Openbox")
 
-## Things used
+## Things used 🌺
 
-* <img src=https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg width=15px height=15px /> GTK-THEME : Oomox Generated
+* GTK-THEME : Oomox Generated
 * ICON-THEME : Oomox Generated
 * CURSOR-THEME : La Capitaine
 * Polywins.sh : https://github.com/alnj/polywins
 
-## Things in these dotfiles
+## Things in these dotfiles 🌺
 
 * Discord
 * Picom

@@ -1911,3 +1911,17 @@ code.inline {
 	font-family: Pragmata Pro Mono;
 }
 
+.guilds-1SWlCJ:hover + .base-3dtUhz .sidebar-2K8pFh,
+.sidebar-2K8pFh:hover,
+.guilds-1SWlCJ:focus-within + .base-3dtUhz .sidebar-2K8pFh,
+.sidebar-2K8pFh:focus-within {
+  width : 240px !important;
+}
+
+
+
+.sidebar-2K8pFh {
+  width : 0;
+  transition : width 0.5s;
+}
+

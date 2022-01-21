@@ -23,7 +23,7 @@
 ![Void](/Screenshots/openbox.png?raw=true "Openbox")
 
 <p>Tabs in BSPWM, through <a href="https://gist.github.com/jpentland/468a42c172eb607bb950f5d00606312c">tabc</a></p>
-<p>Polybar tasklist - Polywins<a href="https://github.com/tam-carre/polywins">Polyiwns</a></p>
+<p>Polybar tasklist -<a href="https://github.com/tam-carre/polywins">Polyiwns</a></p>
 <br>
 
 <p> Thanks to <a href="https://github.com/Gitleptune">Gitleptune</a> for making the readme presentable</p>

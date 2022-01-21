@@ -1,6 +1,7 @@
 
-<h1 align="center"><img src=/Screenshots/seaweed-dotfiles-readme-logo.png alt="Welcome to my dotfiles" height=250px width=350px /></h1>
-<p align="center">🌺 Special thanks to <a href="https://github.com/alnj">alnj</a>. 🌺</p>
+<h1>Dotfiles</h1>
+<br>
+<p >Not really sure what I was doing, so I guess quite a few files will be missing  </p>
 <br>
 
 ## Screenshots 🌺
@@ -21,23 +22,8 @@
 
 ![Void](/Screenshots/openbox.png?raw=true "Openbox")
 
-## Things used 🌺
+<p>Tabs in BSPWM, through <a href="https://gist.github.com/jpentland/468a42c172eb607bb950f5d00606312c">tabc</a></p>
+<p>Polybar tasklist - Polywins<a href="https://github.com/tam-carre/polywins">Polyiwns</a></p>
+<br>
 
-* GTK-THEME : Adapta Nokto
-* ICON-THEME : Papirus
-* CURSOR-THEME : La Capitaine
-* Polywins.sh : https://github.com/alnj/polywins
-
-## Things in these dotfiles 🌺
-
-* Discord
-* Picom
-* Dunst
-* Eww
-* Custom Startpage
-* Polybar
-* Rofi
-* Vim
-* and many other!
-
-<p align center> Thanks to <a href="https://github.com/Gitleptune">Gitleptune</a> for making the readme presentable</p>
+<p> Thanks to <a href="https://github.com/Gitleptune">Gitleptune</a> for making the readme presentable</p>

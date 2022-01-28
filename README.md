@@ -2,7 +2,7 @@
 
 <h1>Dotfiles ☆ ～('▽^人)</h1>
 
-	<p>Mainly serves as just a backup of various configuration files,I'll progressively work towards making it reproducible</p>
+<p>Mainly serves as just a backup of various configuration files,I'll progressively work towards making it reproducible</p>
 
 + **WM**:BSPWM
 + **Shell**: bash
@@ -13,8 +13,9 @@
 
 
 ## Screenshots 🌺
+
 [Maid](/Screenshots/maid.png)
-![Debian](/Screenshots/debian.png)
+![Debian](/Screenshots/dark.png)
 ![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")
 
 <p>Tabs in BSPWM, through <a href="https://gist.github.com/jpentland/468a42c172eb607bb950f5d00606312c">tabc</a></p>

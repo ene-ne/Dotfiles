@@ -1,0 +1,8 @@
+#!/bin/bash
+CUR_PER=$(light)
+
+dunstify -a "Brightness" \
+  "Brightness" \
+  -h int:value:$CUR_PER \
+  -r 69 \
+  "$CUR_PER%"

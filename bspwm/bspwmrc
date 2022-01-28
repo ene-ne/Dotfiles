@@ -1,0 +1,55 @@
+#! /bin/sh
+
+sxhkd &
+
+##bspc monitor -d TERM MUSIC WEB FILES DEV
+##bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+##bspc monitor -d 一 二 三 四 五 六 七
+bspc monitor -d 北 西 中 南 東 
+
+bspc rule -a Alacritty state=floating rectangle=660x900+1240+20
+bspc rule -a Thunar state=floating rectangle=800x600+550+270
+bspc rule -a Google-chrome state=floating rectangle=1200x1040+20+20
+bspc rule -a "MEGAsync" state=floating follow=on
+bspc rule -a feh state=floating
+
+bspc config focus_follows_pointer true
+
+bspc config border_width          0
+bspc config window_gap            6
+bspc config top_padding           10
+bspc config left_padding          10
+bspc config right_padding         10
+bspc config bottom_padding        10
+
+bspc config split_ratio           0.52
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+
+
+bspc config focused_border_color "#f79925"
+
+bspc config active_border_color  "#f79925"
+
+bspc config normal_border_color  "#fcfff5"
+
+# --------------------------------
+# ------- Non-BSPWM related ------
+# --------------------------------
+# Set wallpaper
+sh .fehbg
+# Reload .Xresources
+xrdb -load ~/.Xresources
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+usr/bin/pipewire -c /home/mio/.config/pipewire/input-filter-chain.conf &
+# Launch polybar
+~/.config/polybar/launch.sh
+# Change from ugly 'X' cursor when hovering over background
+xsetroot -cursor_name left_ptr &
+# Make betterlockscreen generate and cache a background image for locking
+xss-lock  -- betterlockscreen -l &
+light -S 30 &
+# ------- Autostart apps ------
+# Picom
+picom  --experimental-backends -b &
+redshift-gtk -l 11.23:75.78 -t 6500:5500 &

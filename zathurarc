@@ -1,0 +1,18 @@
+set index-bg                    "#18191E" 
+set index-fg                    "#000000" 
+set index-active-bg             "#18191E" 
+set index-active-fg             "#000000" 
+
+set inputbar-bg                 "#f3eae9" 
+
+set inputbar-fg                 "#000000" 
+set statusbar-bg                "#F0c2bd" 
+set statusbar-fg                "#000000" 
+
+set highlight-color             "#f3eae9" 
+set highlight-active-color      "#F0c2bd" 
+
+set default-bg                  "#FFFCFD" 
+set default-fg                  "#FFEE79" 
+
+set font "azukifontB 13"

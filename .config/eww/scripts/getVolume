@@ -1,2 +1,0 @@
-#!/bin/bash
-amixer -c 0 sget Master | grep 'Mono:' | awk -F'[][]' '{ print $2 }' | tr -d '%'

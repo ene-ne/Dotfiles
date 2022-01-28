@@ -1,22 +1,26 @@
+![Fetch](fetch.png)
 
-<h1>Dotfiles</h1>
-<p >Not really sure what I was doing, so I guess quite a few files will be missing  </p>
+<h1>Dotfiles ☆ ～('▽^人)</h1>
+
+	<p>Mainly serves as just a backup of various configuration files,I'll progressively work towards making it reproducible</p>
+
++ **WM**:BSPWM
++ **Shell**: bash
++ **Terminal**: alacritty
++ **Editor**: Vim
++ **Launcher**: Rofi
++ **Browser**: Chrome
+
 
 ## Screenshots 🌺
-
-### BSPWM
-
-#### Dark
-
-![Debian](/Debian/Screenshots/1622234974.png?raw=true "BSPWM")
-#### Light
-
-![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")</br>
-### Openbox
-#### Light
-
-![Void](/Screenshots/openbox.png?raw=true "Openbox")
+[Maid](/Screenshots/maid.png)
+![Debian](/Screenshots/debian.png)
+![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")
 
 <p>Tabs in BSPWM, through <a href="https://gist.github.com/jpentland/468a42c172eb607bb950f5d00606312c">tabc</a></p>
 <p>Polybar tasklist -<a href="https://github.com/tam-carre/polywins">Polywins</a></p>
 <p> Thanks to <a href="https://github.com/Gitleptune">Gitleptune</a> for making the readme presentable</p>
+
+
+
+

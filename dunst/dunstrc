@@ -1,5 +1,5 @@
 [global]
-font = SF Pro Display Italic 15
+font = Bakemono Text 13
     ### Geometry ###
     # dynamic width from 0 to 300
     # width = (0, 300)
@@ -13,10 +13,10 @@ font = SF Pro Display Italic 15
     origin = top-right
 
     # Offset from the origin
-    offset = 20x100
+    offset = 60x100
 
     # Scale factor. It is auto-detected if value is 0.
-    scale = 0
+    scale = 1
 
     # Maximum number of notification (0 means no limit)
     notification_limit = 0
@@ -65,7 +65,7 @@ font = SF Pro Display Italic 15
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
+    frame_width = 3
 
     # Defines color of the frame around the notification window.
     frame_color = "#EBC5C5"
@@ -87,8 +87,6 @@ font = SF Pro Display Italic 15
     # idle_threshold = 120
 
     max_icon_size = 64
-icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-
     show_indicators = false
 
     # The spacing between lines.  If the height is smaller than the
@@ -128,7 +126,7 @@ icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/de
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<span font_desc='SF UI Display' weight='Medium'>%s</span>\n%b"
+    format = "<span font_desc='Bakemono Text'>%s</span>\n%b"
 
 
     # Alignment of message text.
@@ -139,17 +137,17 @@ icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/de
     # Possible values are "top", "center" and "bottom".
     vertical_alignment = center
 [urgency_normal]
-background = "#FCF7F7"
+background = "#FFFCFD"
 foreground = "#2C2828"
 highlight = "#2C2828"
 timeout = 10
 [urgency_critical]
-background = "#FCF7F7"
+background = "#FFFCFD"
 foreground = "#2C2828"
 highlight = "#2C2828"
 timeout = 10
 [urgency_low]
-background = "#FCF7F7"
+background = "#FFFCFD"
 foreground = "#2C2828"
 highlight = "#2C2828"
 timeout = 10

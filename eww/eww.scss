@@ -1,0 +1,214 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+//Global Styles
+.bar {
+  background-color: #fffcfd;
+  color: #250e07;
+  font-size: 16px;
+  font-family: Bakemono Text;
+}
+
+.float {
+  color: #250e07;
+  font-family: Bakemono Text;
+}
+
+// Styles on classes (see eww.yuck for more information)
+.volume {
+  margin-right: 25px;
+}
+
+.volume {
+  margin-right: 30px;
+}
+
+.battery scale trough {
+  all: unset;
+  background-color: #dfd9d9;
+  border-radius: 100px;
+  min-height: 15px;
+  min-width: 100px;
+  margin-right: 0px;
+}
+.battery scale trough highlight {
+  all: unset;
+  background-color: #ecc3c2;
+  color: #000000;
+  border-radius: 100px;
+  margin-right: 0px;
+}
+
+.active_workspace {
+  color: #250e07;
+}
+
+.workspaces {
+  margin-left: 20px;
+  margin-top: 1px;
+  font-family: Bakemono Stereo;
+}
+
+.windows button:hover {
+  color: #ecc3c2;
+}
+
+
+.occupied_workspace {
+  color: #a9dee0;
+}
+
+.empty {
+  color: #ecc3c2;
+}
+.workspaces button:hover {
+  color: #d35d6e;
+}
+
+.right{
+  margin-right: -20px;
+}
+.time tooltip {
+  margin-right: 40px;
+}
+
+tooltip {
+  background-color:#F3E4F1;
+  color: #250e07;
+  font-family: Bakemono Text;
+}
+
+.windows {
+  background-color: #fffcfd;
+  color: #250e07;
+  min-width: 0px;
+}
+
+.song {
+  color: #250e07;
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: Bakemono Text;
+}
+
+.mpd {
+  margin-left: 30px;
+}
+
+.song-disp {
+  border-radius: 10px;
+  color: #fffcfd;
+}
+
+
+.song-title {
+margin-left: 10px;
+margin-bottom: 20px;
+}
+
+.ncmpcpp {
+  color: #ecc3c2;
+  margin-left: -50px;
+}
+
+.float{
+  background-color: #fffcfd;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.bat-float {
+  margin-right: 20px;
+}
+
+.bat-float scale trough {
+  all: unset;
+  background-color: #dfd9d9;
+  border-radius: 100px;
+  min-height: 15px;
+  min-width: 100px;
+  margin-right: 0px;
+}
+.bat-float scale trough highlight {
+  all: unset;
+  background-color: #ecc3c2;
+  color: #000000;
+  border-radius: 100px;
+  margin-right: 0px;
+}
+
+.float .time {
+    all :unset;
+}
+
+.float .workspaces{
+  all: unset;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.user{
+  background-color: #fffcfd;
+  border-radius: 5px;
+}
+.logo-image {
+  margin-top: 20px;
+}
+
+.logo-label {
+  color: #250e07;
+  margin-top: 15px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: Bakemono Text;
+  font-style: italic;
+}
+
+.lock-bat {
+  all: unset;
+  background-color: #fffcfd;
+  color: #250e07;
+  border-radius: 5px;
+  font-family: Bakemono Text;
+}
+
+.uptime {
+  all: unset;
+  background-color: #fffcfd;
+  color: #250e07;
+  border-radius: 5px;
+}
+
+
+.uptime-text {
+  margin-left: -135px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  font-family: Bakemono Text;
+  font-style: italic;
+}
+
+.label-uptime {
+  margin-top: 15px;
+  font-family: Bakemono Text;
+  margin-left: 100px;
+  margin-right: -40px;
+}
+
+.time-lock {
+  background-color: #fffcfd;
+  color: #250e07;
+  font-family: Bakemono Text;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+
+.lock-text {
+  margin-top: 50px;
+}

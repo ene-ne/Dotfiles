@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffcfd;
+  font-family: "Bakemono Text";
+  font-size: 18px;
+}
+
+.card-container {
+  background-color: #fffcfd;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+}
+
+.container {
+  margin: 20px;
+  height: 142px;
+}
+
+.links div {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.links a {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+
+.links a:hover {
+  color: #a6b4b3;
+}
+
+img {
+  height: 250px;
+}

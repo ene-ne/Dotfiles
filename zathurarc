@@ -15,4 +15,5 @@ set highlight-active-color      "#F0c2bd"
 set default-bg                  "#FFFCFD" 
 set default-fg                  "#FFEE79" 
 
-set font "azukifontB 13"
+set font "Bakemono Mono"
+set window-title-basename false

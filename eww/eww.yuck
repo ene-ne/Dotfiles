@@ -1,0 +1,310 @@
+(defwidget bar []
+    (box :halign "fill"
+      (left)
+    (windows)  
+    (right)))
+
+(defwidget float []
+  (centerbox :halign "fill"
+    (time)
+    (workspace)
+    (bat-float)))
+
+(defwidget right []
+                  (box :orientation "h"
+                        :class "right"
+                       :halign "end"
+                       :space-evenly true
+                    (brightness)
+                    (volume)
+                    (battery)
+                    (time))
+                  )
+
+(defwidget left []
+  (box :orientation "h"
+       :halign "start" 
+       :space-evenly "true" 
+    (workspace)
+    (ncmpcpp)))
+
+(defwidget battery []
+  (box :class "battery" 
+       :orientation "h" 
+       :space-evenly false 
+       :halign "end" "BAT "
+    (scale
+            :min "0"
+            :max "99"  
+            :value battery
+            :active false
+            :tooltip {battery + "%" }
+    )))
+
+(defwidget time []
+    (box    :class "time"
+            :orientation "h"
+            :tooltip date 
+            :orientation "start"
+      "${time}  ${day}"))
+
+(defwidget lock-time []
+  (box    :class "lock-time"
+          :orientation "h"
+          :halign "fill"
+            :tooltip date 
+            :orientation "start"
+      "${time}|${day}"))
+
+
+(defwidget  brightness []
+  (eventbox :onscroll "./brightness.sh {}"
+    (box    :class "brightness" 
+            :orientation "h" 
+            :halign "end"
+       "BRI ${brightness +"%"}" )))
+
+(defwidget volume []
+  (eventbox :onscroll "./selvol.sh {} > /dev/null"
+    (button        :onclick  "amixer -D pipewire set Master toggle"
+    (box    :class "volume"
+            :orientation "h"
+            :halign "end" "VOL "
+      volume))))
+
+
+(defwidget windows []
+  (box :class "windows"
+       :orientation "h"
+       :width 0
+       :halign "center" 
+       :space-evenly true 
+       :spacing 10
+
+    (button :orientation "h"
+            :onclick "herbstclient set_attr clients.$(herbstclient list_clients| sed -n 4p).minimized toggle"
+            :onrightclick "herbstclient close $(herbstclient list_clients|sed -n 4p)"
+             win4 )
+
+    (button  :orientation "h"
+             :onclick "herbstclient set_attr clients.$(herbstclient list_clients| sed -n 3p).minimized toggle"
+             :onrightclick "herbstclient close $(herbstclient list_clients| sed -n 3p)" 
+              win3 ) 
+
+   (button  :orientation "h"
+            :onclick "herbstclient set_attr clients.$(herbstclient list_clients| sed -n 1p).minimized toggle"
+            :onrightclick "herbstclient close $(herbstclient list_clients|sed -n 1p)"
+            win1 )
+
+    (button  :orientation "h"
+             :onclick "herbstclient set_attr clients.$(herbstclient list_clients| sed -n 2p).minimized toggle"
+             :onrightclick "herbstclient close $(herbstclient list_clients| sed -n 2p)" 
+              win2 ) 
+
+    (button  :orientation "h"
+             :onclick "herbstclient set_attr clients.$(herbstclient list_clients| sed -n 5p).minimized toggle"
+             :onrightclick "herbstclient close $(herbstclient list_clients| sed -n 5p)" 
+              win5 )
+    ))
+
+(defwidget workspace [] 
+  (literal :content workspace
+           :class workspace
+           ))
+
+(defwidget ncmpcpp []
+  (eventbox :onhover "/home/mio/.ncmpcpp/album_art.sh && eww open song"
+            :onhoverlost "eww close song"
+            :timeout "1s"
+            :class "mpd"
+    (button :orientation "h"
+            :onclick "alacritty -e ncmpcpp"
+            :class "ncmpcpp"
+      " MPD")))
+
+
+(defwidget song []
+            (box :class "song-disp"
+                 :style "background:rgba(0, 0, 0, 0.4),url ('${cover}'); background-size: cover;" 
+            (label :class "song-title"
+                   :text song-title
+                   :valign "end" 
+                   :halign "start" 
+                   :limit-width: 20
+                   :show_truncated: true))  
+
+  )
+
+(defwidget bat-float []
+  (box :class "bat-float"
+       :orinetation "h" 
+       :halign "end"
+      (scale :min "0"
+            :max "99"
+            :value battery
+           :tooltip {battery + "%"})))
+
+
+
+(defwidget logo []
+  (box :orientation "v"
+       :halign "fill"
+        
+       :space-evenly false
+    (image :path "${pfp}"
+           :image-width 210
+           :class "logo-image")
+    (label :text "Mio"
+           :class "logo-label")))
+
+(defwidget lock-bat []
+  (box :orinetation "h"
+       :halign "fill"
+    (label :text "BAT")
+    (bat-float)))
+
+(defwidget uptime []
+  (box :orientation "h"
+       :halign "fill"
+    (label :valign "start"
+           :class "label-uptime"
+           :halign "center" 
+           :text "Uptime" )
+    (label :valign "end"
+           :halign "center"
+            :class "uptime-text"
+           :text uptime )))
+  
+(defpoll battery :interval "30s"
+                 :initial "100"
+  "cat /sys/class/power_supply/BAT1/capacity")
+
+(defpoll time :interval "10s"
+          "date '+%H:%M'")
+
+(defpoll date :interval "1m"
+          "date '+%a %b %d'")
+(defpoll day :interval "1m"
+          "date '+%a'")
+
+
+(defpoll win1 :interval "1s" 
+              :initial "ene"
+  "xdotool getwindowclassname $(herbstclient list_clients | sed -n 1p) || echo \" \"")
+(defpoll win2 :interval "1s"
+             :initial ""
+  "xdotool getwindowclassname $(herbstclient list_clients | sed -n 2p) || echo \" \"")
+(defpoll win3 :interval "1s"
+             :initial ""
+  "xdotool getwindowclassname $(herbstclient list_clients | sed -n 3p) || echo \" \"")
+
+(defpoll win4 :interval "1s"
+              :intital ""
+  "xdotool getwindowclassname $(herbstclient list_clients | sed -n 4p) || echo \" \"")
+
+(defpoll win5 :interval "1s"
+             :initial ""
+  "xdotool getwindowclassname $(herbstclient list_clients | sed -n 5p) || echo \" \"")
+
+(defpoll volume :interval "1s"
+                 :initial "100" 
+  "/home/mio/.config/eww/audio.sh"
+  )
+
+(defpoll brightness :interval "1s"
+                     :initial "100" 
+  "light|grep -o '^..'")
+
+(deflisten workspace "./workspaces.sh")
+
+
+(defvar cover "/tmp/mpd_cover.jpg")
+(defvar pfp "/home/mio/.config/eww/.profile.jpg")
+(defpoll uptime :interval "10s"
+   "uptime -p | cut -d' ' -f2-")
+
+(defpoll song-title :interval "5s"
+                    :initial ""
+  "mpc -f %title% current")
+
+(defwindow bar
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "100%"
+                      :height "21px"
+                      :anchor "bottom center")
+  :reserve (struts :side "bottom" :distance "20px")
+  (bar))
+
+(defwindow song
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry :x "3%"
+                      :y "-40px"
+                      :anchor "bottom left"
+                      :width "250px"
+                      :height "250px")
+  :stacking "fg"
+  (song))
+
+(defwindow float
+  :monitor 0
+  :geometry (geometry :x "-3%"
+                      :y "-40px"
+                      :height "40px"
+                      :width "20%"
+                      :anchor "bottom right")
+  :stacking "bg"
+  (float))
+
+(defwindow user
+           :monitor 0
+           :geometry (geometry :x "-235"
+                               :y "360"
+                               :width "260"
+                               :height "335"
+                               :anchor "center top")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (logo))
+
+(defwindow lock-bat
+           :monitor 0
+           :geometry (geometry :x "90"
+                               :y "685"
+                               :width "120"
+                               :height "40"
+                               :anchor "center top")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (lock-bat))
+
+(defwindow uptime
+           :monitor 0
+           :geometry (geometry :x "80"
+                               :y "565"
+                                :width "300"
+                               :height "110"
+                               :anchor "center top")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (uptime))
+
+(defwindow time-lock
+           :monitor 0
+           :geometry (geometry :x "90"
+                               :y "380"
+                               :width "150"
+                               :height "50"
+                               :anchor "center top")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+  (lock-time))
+
+

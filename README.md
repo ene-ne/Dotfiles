@@ -1,4 +1,4 @@
-<h1>Dotfiles ∪･ｪ･∪</h1>
+<h1>Dotfiles</h1>
 
 <p>Mainly serves as just a backup of various configuration files</p>
 
@@ -9,7 +9,7 @@
 - **Launcher**: dmenu
 - **Browser**: firefox
 
-[hlwm](/Screenshots/dotfiles.jpg)
+[hlwm](/Screenshots/dotfiles.png)
 ![Artix](/Screenshots/tabbed.png?raw=true "BSPWM")
 
 <p>Tabs in BSPWM, through <a href="https://gist.github.com/jpentland/468a42c172eb607bb950f5d00606312c">tabc</a></p>

@@ -1,0 +1,216 @@
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+}
+
+//Global Styles
+.bar {
+  background-color: #fcf7f9;
+  color: #250e07;
+  font-size: 18px;
+  font-family: Apple Garamond;
+  border: 2px solid #250e07;
+}
+
+.float {
+  color: #250e07;
+  font-family: Apple Garamond;
+  border: 2px solid #250e07;
+}
+
+// Styles on classes (see eww.yuck for more information)
+.volume {
+  margin-right: 25px;
+}
+
+.volume {
+  margin-right: 30px;
+}
+
+.battery scale trough {
+  all: unset;
+  background-color: #dfd9d9;
+  border-radius: 100px;
+  min-height: 15px;
+  min-width: 100px;
+  margin-right: 0px;
+}
+.battery scale trough highlight {
+  all: unset;
+  background-color: #f2dde6;
+  color: #000000;
+  border-radius: 100px;
+  margin-right: 0px;
+}
+
+.active_workspace {
+  color: #250e07;
+}
+
+.workspaces {
+  margin-left: 20px;
+  margin-top: 1px;
+  font-family: Bakemono Stereo;
+}
+
+.windows button:hover {
+  color: #f2dde6;
+}
+
+
+.occupied_workspace {
+  color: #a9dee0;
+}
+
+.empty {
+  color: #f2dde6;
+}
+.workspaces button:hover {
+  color: #d35d6e;
+}
+
+.right{
+  margin-right: -20px;
+}
+.time tooltip {
+  margin-right: 40px;
+}
+
+tooltip {
+  background-color:#F3E4F1;
+  color: #250e07;
+  font-family: Apple Garamond;
+}
+
+.windows {
+  background-color: #fcf7f9;
+  color: #250e07;
+  min-width: 0px;
+}
+
+.song {
+  color: #250e07;
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: Apple Garamond;
+}
+
+.mpd {
+  margin-left: 30px;
+}
+
+.song-disp {
+  border: 3px solid #250e07;
+  color: #fcf7f9;
+}
+
+
+.song-title {
+margin-left: 10px;
+margin-bottom: 20px;
+}
+
+.ncmpcpp {
+  color: #f2dde6;
+  margin-left: -50px;
+}
+
+.float{
+  background-color: #fcf7f9;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.bat-float {
+  margin-right: 20px;
+}
+
+.bat-float scale trough {
+  all: unset;
+  background-color: #dfd9d9;
+  border-radius: 100px;
+  min-height: 15px;
+  min-width: 100px;
+  margin-right: 0px;
+}
+.bat-float scale trough highlight {
+  all: unset;
+  background-color: #f2dde6;
+  color: #000000;
+  border-radius: 100px;
+  margin-right: 0px;
+}
+
+.float .time {
+    all :unset;
+}
+
+.float .workspaces{
+  all: unset;
+  margin-top: 8px;
+  margin-left: -10px;
+}
+
+.user{
+  background-color: #fcf7f9;
+  border: 2px solid #250e07;
+}
+.logo-image {
+  margin-top: 20px;
+}
+
+.logo-label {
+  color: #250e07;
+  margin-top: 15px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: Apple Garamond;
+  font-style: italic;
+}
+
+.lock-bat {
+  all: unset;
+  background-color: #fcf7f9;
+  color: #250e07;
+  border: 2px solid #250e07;
+  font-family: Apple Garamond;
+}
+
+.uptime {
+  all: unset;
+  background-color: #fcf7f9;
+  color: #250e07;
+  border: 2px solid #250e07;
+}
+
+
+.uptime-text {
+  margin-left: -135px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  font-family: Apple Garamond;
+  font-style: italic;
+}
+
+.label-uptime {
+  margin-top: 15px;
+  font-family: Apple Garamond;
+  margin-left: 100px;
+  margin-right: -40px;
+}
+
+.time-lock {
+  background-color: #fcf7f9;
+  color: #250e07;
+  font-family: Apple Garamond;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid #250e07;
+}
+
+
+.lock-text {
+  margin-top: 50px;
+}

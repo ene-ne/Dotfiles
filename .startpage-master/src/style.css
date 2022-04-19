@@ -5,19 +5,19 @@
 }
 
 body {
-  background-color: #fffcfd;
-  font-family: "Bakemono Text";
+  background-color: #f7f0f7;
+  font-family: "Apple Garamond";
   font-size: 18px;
 }
 
 .card-container {
-  background-color: #fffcfd;
+  background-color: #000000;
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 250px;
+  height: 300px;
 }
 
 .container {
@@ -25,17 +25,11 @@ body {
   height: 142px;
 }
 
-.links div {
-  margin-bottom: 5px;
-  color: #000000;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
 .links a {
   display: flex;
   flex-direction: column;
-  color: #000000;
+  color: #fffafa;
+  font-size: 1.1em;
 }
 
 .links a:hover {
@@ -43,5 +37,8 @@ body {
 }
 
 img {
-  height: 250px;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 100%;
+  width: 11em;
 }

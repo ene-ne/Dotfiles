@@ -18,7 +18,7 @@ Mod=Mod4    # Use alt as the main modifier
 #Mod=Mod4   # Use the super key as the main modifier
 
 hc keybind $Mod-q close
-hc keybind $Mod-Return spawn alacritty 
+hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-d spawn dmenu_run
 hc keybind XF86AudioRaiseVolume spawn sh -c "amixer -D pipewire set Master 5%+  && voldunst"
 hc keybind XF86AudioLowerVolume spawn sh -c "amixer -D pipewire set Master 5%-  && voldunst"
@@ -36,10 +36,10 @@ hc keybind $Mod-XF86AudioPlay spawn sh -c "mpc toggle"
 hc keybind $Mod-XF86AudioPrev spawn sh -c "mpc prev"
 hc keybind $Mod-XF86AudioNext spawn sh -c "mpc next"
 hc keybind $Mod-e spawn jumpapp thunar
-hc keybind $Mod-r spawn alacritty -e ranger 
+hc keybind $Mod-r spawn alacritty -e ranger
 hc keybind $Mod-Shift-a spawn alacritty -e btm
 hc keybind Print spawn sh -c "maim ~/Pictures/Screenshots/$(date +%s).png && notify-send \"Maim\" \"Screenshot Captured\""
-hc keybind Shift-Print spawn sh -c "maim -s -o | xclip -selection clipboard -t image/png"	
+hc keybind Shift-Print spawn sh -c "maim -s -o | xclip -selection clipboard -t image/png"
 # basic movement in tiling and floating mode
 # focusing clients
 hc set focus_follows_mouse true
@@ -114,9 +114,9 @@ hc set default_frame_layout 1
 # layouts, if the layout change wouldn't affect the actual window positions.
 # I.e. if there are two windows within a frame, the grid layout is skipped.
 hc keybind $Mod-space                                                           \
-            or , and . compare tags.focus.curframe_wcount = 2                   \
-                     . cycle_layout +1 vertical horizontal max vertical grid    \
-               , cycle_layout +1
+    or , and . compare tags.focus.curframe_wcount = 2                   \
+    . cycle_layout +1 vertical horizontal max vertical grid    \
+    , cycle_layout +1
 
 # mouse
 hc mouseunbind --all
@@ -136,10 +136,10 @@ hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
 hc attr tabbed_max 1
 hc set theme.title_when 'multiple_tabs'
-hc set frame_border_active_color '#ecc3c2'
-hc set frame_border_normal_color '#fffcfd'
-hc set frame_bg_normal_color '#fffcfd'
-hc set frame_bg_active_color '#ecc3c2'
+hc set frame_border_active_color '#f2dde6'
+hc set frame_border_normal_color '#fcf7f9'
+hc set frame_bg_normal_color '#fcf7f9'
+hc set frame_bg_active_color '#f2dde6'
 hc set frame_border_width 0
 hc set always_show_frame 1
 hc set frame_bg_transparent 1
@@ -151,9 +151,9 @@ hc set frame_normal_opacity 100
 
 hc keybind $Mod-g cycle_value frame_gap 0 20
 
-hc attr theme.title_height 25
+hc attr theme.title_height 30
 hc attr theme.title_depth 10
-hc attr theme.title_font 'CozetteVector:size=12'  # example using Xft
+hc attr theme.title_font 'Apple Garamond:size=13'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
 hc attr theme.padding_top 0  # space below the title's baseline (i.e. text depth)
 hc attr theme.floating.padding_top 40
@@ -162,20 +162,20 @@ hc attr theme.normal.title_color '#2A2424'
 hc attr theme.border_width 15
 hc attr theme.inner_width 5
 hc attr theme.outer_width 5
-hc attr theme.inner_color '#fffcfd'
-hc attr theme.outer_color '#fffcfd'
-hc attr theme.color '#ecc3c2'
-hc attr theme.floating.border_width 0
+hc attr theme.inner_color '#fcf7f9'
+hc attr theme.outer_color '#fcf7f9'
+hc attr theme.color '#f2dde6'
+hc attr theme.floating.border_width 5
 hc attr theme.floating.outer_width 0
 hc attr theme.floating.inner_width 0
-hc attr theme.floating.outer_color '#fffcfd'
-hc attr theme.floating.inner_color '#fffcfd'
-hc attr theme.floating.color '#ecc3c2'
-hc attr theme.normal.inner_color '#fffcfd'
-hc attr theme.tab_color '#fffcfd'
+hc attr theme.floating.outer_color '#fcf7f9'
+hc attr theme.floating.inner_color '#fcf7f9'
+hc attr theme.floating.color '#f2dde6'
+hc attr theme.normal.inner_color '#fcf7f9'
+hc attr theme.tab_color '#fcf7f9'
 hc attr theme.title_align center
 hc attr theme.title_when multiple_tabs
-hc attr theme.background_color '#ecc3c2'
+hc attr theme.background_color '#f2dde6'
 
 hc set window_gap 10
 hc set frame_padding 10
@@ -199,7 +199,6 @@ hc rule class=Thunar floating=on floatplacement=center
 hc rule class=feh floating=on floatplacement=center
 
 hc set tree_style '╾│ ├└╼─┐'
-hc floating true
 
 
 # unlock, just to be sure
@@ -212,9 +211,12 @@ hc unlock
 
 # find the panel
 sh .fehbg &
+#hsetroot -solid '#f8f7fc' &
 xss-lock -l -- /home/mio/.local/bin/lock.sh &
 xrdb ~/.Xresources &
-picom --experimental-backends -b &
-/home/mio/.config/herbstluftwm/switch-panel.sh &
+picom  &
+#/home/mio/.config/herbstluftwm/switch-panel.sh &
+eww open bar &
 dunst &
 redshift &
+spotifyd &

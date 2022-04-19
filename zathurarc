@@ -6,14 +6,20 @@ set index-active-fg             "#000000"
 set inputbar-bg                 "#f3eae9" 
 
 set inputbar-fg                 "#000000" 
-set statusbar-bg                "#F0c2bd" 
+set statusbar-bg                "#f2dde6" 
 set statusbar-fg                "#000000" 
 
 set highlight-color             "#f3eae9" 
 set highlight-active-color      "#F0c2bd" 
 
-set default-bg                  "#FFFCFD" 
+set default-bg                  "#fcf7f9" 
 set default-fg                  "#FFEE79" 
 
-set font "Bakemono Mono"
-set window-title-basename false
+set completion-bg               "#fcf7f9"
+set completion-fg               "#250e07"
+
+set completion-highlight-bg     "#f2dde6"
+set completion-highlight-fg     "#250e07"
+
+set font "Triplicate T4"
+set window-title-basename true

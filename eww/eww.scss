@@ -6,13 +6,9 @@
 .bar {
   background-color: #fffcfd;
   color: #250e07;
-  font-size: 16px;
-  font-family: Bakemono Text;
-}
-
-.float {
-  color: #250e07;
-  font-family: Bakemono Text;
+  font-size: 18px;
+  font-family: Apple Garamond;
+  border-top: 2px solid #250e07;
 }
 
 // Styles on classes (see eww.yuck for more information)
@@ -26,7 +22,7 @@
 
 .battery scale trough {
   all: unset;
-  background-color: #dfd9d9;
+  background-color: #CFCFCF;
   border-radius: 100px;
   min-height: 15px;
   min-width: 100px;
@@ -34,7 +30,7 @@
 }
 .battery scale trough highlight {
   all: unset;
-  background-color: #ecc3c2;
+  background-color: #FED3D3;
   color: #000000;
   border-radius: 100px;
   margin-right: 0px;
@@ -46,21 +42,20 @@
 
 .workspaces {
   margin-left: 20px;
-  margin-top: 1px;
   font-family: Bakemono Stereo;
 }
 
 .windows button:hover {
-  color: #ecc3c2;
+  color: #f7cac9;
 }
 
 
 .occupied_workspace {
-  color: #a9dee0;
+  color: #AABDD4;
 }
 
 .empty {
-  color: #ecc3c2;
+  color: #f7cac9;
 }
 .workspaces button:hover {
   color: #d35d6e;
@@ -74,13 +69,13 @@
 }
 
 tooltip {
-  background-color:#F3E4F1;
-  color: #250e07;
-  font-family: Bakemono Text;
+  background-color: #fffcfd;
+  border: 2px solid #250e07;
+  color: #250e07 ;
 }
 
 .windows {
-  background-color: #fffcfd;
+  background-color: #fcf7f9;
   color: #250e07;
   min-width: 0px;
 }
@@ -89,16 +84,12 @@ tooltip {
   color: #250e07;
   background-size: cover;
   background-blend-mode: darken;
-  font-family: Bakemono Text;
-}
-
-.mpd {
-  margin-left: 30px;
+  font-family: Apple Garamond;
 }
 
 .song-disp {
-  border-radius: 10px;
-  color: #fffcfd;
+  border: 3px solid #250e07;
+  color: #fcf7f9;
 }
 
 
@@ -108,13 +99,12 @@ margin-bottom: 20px;
 }
 
 .ncmpcpp {
-  color: #ecc3c2;
+  color: #AABDD4;
   margin-left: -50px;
 }
 
 .float{
-  background-color: #fffcfd;
-  border-radius: 5px;
+  background-color: #fcf7f9;
   font-size: 18px;
 }
 
@@ -132,7 +122,7 @@ margin-bottom: 20px;
 }
 .bat-float scale trough highlight {
   all: unset;
-  background-color: #ecc3c2;
+  background-color: #D0E8E7;
   color: #000000;
   border-radius: 100px;
   margin-right: 0px;
@@ -144,13 +134,13 @@ margin-bottom: 20px;
 
 .float .workspaces{
   all: unset;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: -10px;
 }
 
 .user{
-  background-color: #fffcfd;
-  border-radius: 5px;
+  background-color: #fcf7f9;
+  border: 2px solid #250e07;
 }
 .logo-image {
   margin-top: 20px;
@@ -161,23 +151,23 @@ margin-bottom: 20px;
   margin-top: 15px;
   font-size: 24px;
   margin-bottom: 10px;
-  font-family: Bakemono Text;
+  font-family: Apple Garamond;
   font-style: italic;
 }
 
 .lock-bat {
   all: unset;
-  background-color: #fffcfd;
+  background-color: #fcf7f9;
   color: #250e07;
-  border-radius: 5px;
-  font-family: Bakemono Text;
+  border: 2px solid #250e07;
+  font-family: Apple Garamond;
 }
 
 .uptime {
   all: unset;
-  background-color: #fffcfd;
+  background-color: #fcf7f9;
   color: #250e07;
-  border-radius: 5px;
+  border: 2px solid #250e07;
 }
 
 
@@ -185,27 +175,27 @@ margin-bottom: 20px;
   margin-left: -135px;
   margin-right: 25px;
   margin-bottom: 30px;
-  font-family: Bakemono Text;
+  font-family: Apple Garamond;
   font-style: italic;
 }
 
 .label-uptime {
   margin-top: 15px;
-  font-family: Bakemono Text;
+  font-family: Apple Garamond;
   margin-left: 100px;
   margin-right: -40px;
 }
 
 .time-lock {
-  background-color: #fffcfd;
+  background-color: #fcf7f9;
   color: #250e07;
-  font-family: Bakemono Text;
+  font-family: Apple Garamond;
   font-size: 32px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 5px;
+  border: 2px solid #250e07;
 }
 
 

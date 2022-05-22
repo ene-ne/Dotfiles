@@ -1,0 +1,61 @@
+Xft.lcdfilter: lcddefault
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.dpi:128
+
+Sxiv.background: #fcf7f9
+Sxiv.foreground: #f2dde6
+Sxiv.font: Codelia Light-11
+
+! special
+*.foreground:   #250e07
+*.background:   #fcf7f9
+*.cursorColor:  #250e07
+
+! black
+*.color0:       #45000d
+*.color8:       #e3cade
+
+! red
+*.color1:       #95424e
+*.color9:       #c7bdbf
+
+! green
+*.color2:       #b4d3b2
+*.color10:      #d8e3d7
+
+! yellow
+*.color3:       #f2bfa0
+*.color11:      #fcd299
+
+! blue
+*.color4:       #a5d1e6
+*.color12:      #adbde3
+
+! magenta
+*.color5:       #bcafcf
+*.color13:      #d3d3e7
+
+! cyan
+*.color6:       #97c7c7
+*.color14:      #c2dede
+
+! white
+*.color7:       #f7cac9
+*.color15:      #faf2f5
+
+xterm*faceName: Monospace
+xterm*faceSize: 11
+
+xterm*vt100*geometry: 80x32
+xterm*saveLines: 2000
+
+xterm*internalBorder: 32
+
+XTerm*vt100.translations: #override \
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+  
+
